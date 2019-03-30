@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formularze 2</title>
+  </head>
+  <body>
+    <form action="index.php" method="get">
+      <input type="text" name="login" autocomplete="off"><br><br>
+      <input type="password" name="pass"><br><br>
+      <input type="number" name="wiek" step="10"><br><br>
+
+      Daty:<br><br>
+      <input type="date" name="date"><br><br>
+      <input type="time" name="time"><br><br>
+      <input type="datetime-local" name="datetime-local"><br><br>
+      <input type="week" name="week"><br><br>
+      <input type="month" name="month"><br><br>
+
+      Telefon:<br><br>
+      <input type="tel"><br><br>
+
+      Kolor:<br><br>
+      <input type="color" name="color">
+
+      Zakres:<br><br>
+      <input type="range" name="zakres" min="0" max="255">
+
+      Lista:<br><br>
+      <label>Dzien tygodnia</label>
+      <input type="text" list="tydzien">
+      <datalist id="tydzien" required>
+        <option value="Poniedzialek">
+        <option value="Wtorek">
+        <option value="Sroda">
+        <option value="czwartek">
+        <option value="Piatek">
+        <option value="sobota">
+        <option value="Niedziela">
+      </datalist>
+
+      Wyrazenia regularne:<br><br>
+      Pesel:<br><br>
+      <input type="text" name="pesel" pattern="[0-9]{11}"><br><br>
+
+      kod pocztowy:<br><br>
+      <input type="text" name="kod" pattern="\d{2}[- ]\d{3}"><br><br>
+
+      hasło:<br><br>
+      <!-- minimum 8 znakow, minimum 1 duza litera, minimum 1 mala litera, minimum 1 cyfra -->
+      <input type="text" name="haslo" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}"><br><br>
+
+      zadanie domowe:<br><br>
+      adres ip:<br><br>
+      <!-- 192.168.0.1 -->
+      adres mac:<br><br>
+      <!-- 11AAdd1234aa 11:AA:dd:12:34:aa-->
+      telefon komorkowy:<br><br>
+      <!-- 111 222 333   111-222-333 111222333 -->
+      hasło:<br><br>
+      <!-- minimum 8 znakow, minimum 1 duza litera, minimum 1 mala litera, minimum 1 cyfra, minimum jeden znak specjalny-->
+
+
+      <input type="submit" name="przycisk" value="wyslij"><br><br>
+
+    </form>
+
+  </body>
+</html>

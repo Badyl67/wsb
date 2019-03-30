@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formularze 1</title>
+  </head>
+  <body>
+    <!-- GET, POST -->
+    <div class="formularz">
+      <form action="index.html" method="get" novalidate>
+        <label>Imie <input type="text" name="imie" placeholder="imie" required></label><br><br>
+        <label>Haslo <input type="password" name="pass" placeholder="nazwisko" required></label><br><br>
+        <label>Email <input type="email" name="poczta" placeholder="email@gmail.com" required></label><br><br>
+
+        Płeć:<br><br>
+        <label>Kobieta<input type="radio" name="plec" value="k" checked></label><br><br>
+        <label>Mezczyzna<input type="radio" name="plec" value="m"></label><br><br>
+
+        <textarea name="wiadomosc" rows="8" cols="80"placeholder="Wpisz wiadomosc"></textarea><br><br>
+        <select name="miasto">
+          <optgroup label="wielkopolskie">
+            <option value="p">Poznań</option>
+            <option value="g">Gniezno</option>
+          </optgroup>
+          <optgroup label="zachodniopomorskie">
+            <option value="szcz">Szczecin</option>
+            <option value="star">Stargard</option>
+
+
+          </optgroup>
+
+        </select>
+
+
+        <input type="reset" name="reset" value="Wyczysc">
+        <input type="submit" name="przycisk" value="Zapisz">
+      </form>
+    </div>
+  </body>
+</html>

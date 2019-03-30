@@ -1,0 +1,40 @@
+body{
+  background-color: aqua;
+}
+
+table, tr, td{
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+
+}
+
+#tabela2, #tabela3, #tabela4, #tabela5{
+  margin-top: 20px;
+}
+
+#tabela4 td{
+  color: #fff;
+}
+
+#tabela4 th{
+
+background-color: yellow;
+}
+
+#tabela5{
+  color: red;
+}
+
+.green{
+  background-color: green;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.white{
+  background-color: white;
+}
