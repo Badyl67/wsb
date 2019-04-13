@@ -1,0 +1,12 @@
+body{
+  background-color: aqua;
+}
+
+#komunikat{
+  width: 100px;
+  height: 100px;
+  color: #fff
+  text-align: center;
+  line-height: 100px;
+
+}
